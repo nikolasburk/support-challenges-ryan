@@ -47,3 +47,15 @@ stack backtrace:
 ```
 
 How can I fix this problem?
+
+- Hey! As you have upgraded to the `preview016` release, there is a breaking change introduced in Lift's migration engine. Due to this, you need to manually delete the `migrations` folder from your system and drop the `_Migration` table from your database using the `DROP TABLE IF EXISTS _Migration` command.
+
+- After following the above steps, you can run `npx prisma2 dev` and your migrations will be applied successfully!
+
+- You can read more on the breaking changes introduced in the `2.0.0-preview016` version [here](https://github.com/prisma/prisma2/releases/tag/2.0.0-preview016)
+
+- If the above steps still don't work, please feel free to ask for any more help.
+
+#### My thought process
+
+- The way I addressed the problem was finding out that the cause of this issue was due to the version upgrade as the user has mentioned. Then I went through Prisma's changelogs and there was indeed a breaking change in Lift's Migration engine in this specific version.
