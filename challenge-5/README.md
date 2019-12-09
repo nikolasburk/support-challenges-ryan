@@ -62,3 +62,17 @@ error Command failed with exit code 1.
 ```
 
 Help please!!!
+
+
+- Hi! This issue that you're facing is due to the breaking change introduced in `2.0.0-preview017` version. Before this version, PhotonJS was generated in the `node_modules` in the `@generated/photon` folder. In this version and forward, PhotonJS will be generated in `node_modules` in the `@prisma/photon` folder. So to fix your issue, you just need to update your **1st** line in `index.ts` and replace `@generated/photon` with `@prisma/photon`. This should make it work!
+
+- I also noted that when you run `yarn` or `npm install`, you will get a warning that looks something like this
+`@prisma/photon@2.0.0-preview018 is not compatible with prisma2@2.0.0-preview017.1. Their versions need to be equal.`
+
+- To get rid of this warning, you need to either downgrade `@prisma/photon` to version `2.0.0-preview017.1` or upgrade `prisma2` to version `2.0.0-preview018`. 
+
+- After you upgrade/downgrade any one of the following packages mentioned above, the warning should go away. You can read more about the changes made to Prisma2 in version `2.0.0-preview017` [here](https://github.com/prisma/prisma2/releases/tag/2.0.0-preview017)
+
+#### My thought process
+
+- The advantage to analyzing this problem is that I have already faced this as I regularly keep updating `Prisma` and `Nexus` related dependencies in my `prisma-nexus` project. Due to this, I found that I had faced the same issue and `@generated/photon` was throwing an error due to a breaking change in how PhotonJS is generated.

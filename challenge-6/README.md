@@ -25,7 +25,7 @@ Imagine you find this comment in a GitHub issue from a community member that you
 
 ### Message to the original poster
 
-Hey, It's great that you love Photon so much. I love it too as it's made our life as developers so easy and bug-free. But could you please edit your comment you posted on that issue on GitHub (link here) to amend the words `suck` and `fucking` with more user friendly alternatives so that it's not derogatory to the creators/maintainers of TypeORM and Sequelize (both are great libraries btw) and also maintains a friendly environment in our online community. Thank you so much in advance!
+Hey, It's great that you love Photon so much. I love it too as it's made our life as developers so easy and bug-free. But could you please edit your comment you posted on that issue on GitHub (link here) to amend the words `s**k` and `f***ing` with more user friendly alternatives so that it's not derogatory to the creators/maintainers of TypeORM and Sequelize (both are great libraries btw) and also maintains a friendly environment in our online community. Thank you so much in advance!
 
 ### Contact point
 

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@prisma/photon@^2.0.0-alpha.352":
-  version "2.0.0-alpha.352"
-  resolved "https://registry.yarnpkg.com/@prisma/photon/-/photon-2.0.0-alpha.352.tgz#c5bb302b92be06439f2bdd36a684b57e1c6ab763"
-  integrity sha512-RR9rzd0sQy5Yxiu6VcieFx80y5gnEfvBcLxmX8+9JVEMs/XaNC6EKCJiznbLQjwU+mvYClSMyPNzYLAHGUpTbg==
+"@prisma/photon@^2.0.0-preview017.1":
+  version "2.0.0-preview018"
+  resolved "https://registry.yarnpkg.com/@prisma/photon/-/photon-2.0.0-preview018.tgz#65698a5da5aa83874058893ad681a814f72e015e"
+  integrity sha512-XZR27e0gwpQzkUCMWGtR2DGPInLCPyGt8ZBDObmwMfUn7zlEN7zo0gFcTraAeeceJxlEPcDNU6NG3TZyu6cQew==
 
 "@types/body-parser@*", "@types/body-parser@^1.17.1":
   version "1.17.1"
@@ -44,10 +44,15 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.1.tgz#dc488842312a7f075149312905b5e3c0b054c79d"
   integrity sha512-FwI9gX75FgVBJ7ywgnq/P7tw+/o1GUbtP0KzbtusLigAOgIgNISRK0ZPl4qertvXSIE8YbsVJueQ90cDt9YYyw==
 
-"@types/node@*", "@types/node@12.12.12":
+"@types/node@*":
   version "12.12.12"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.12.tgz#529bc3e73dbb35dd9e90b0a1c83606a9d3264bdb"
   integrity sha512-MGuvYJrPU0HUwqF7LqvIj50RZUX23Z+m583KBygKYUZLlZ88n6w28XRNJRJgsHukLEnLz6w6SvxZoLgbr5wLqQ==
+
+"@types/node@12.12.14":
+  version "12.12.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.14.tgz#1c1d6e3c75dba466e0326948d56e8bd72a1903d2"
+  integrity sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==
 
 "@types/range-parser@*":
   version "1.2.3"
@@ -342,10 +347,10 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
-prisma2@alpha:
-  version "2.0.0-alpha.351"
-  resolved "https://registry.yarnpkg.com/prisma2/-/prisma2-2.0.0-alpha.351.tgz#d3cd709e7ff60b55520ebdddfe17d60d0f308a31"
-  integrity sha512-o4cMfQK+pNCTYPsrUtyxfmu7j7xna0YWZQkZreHukKZIqAOh/lJZvlLfI9PST49ssnLwPzzmm/ORHdNwuUDkKg==
+prisma2@2.0.0-preview017.1:
+  version "2.0.0-preview017.1"
+  resolved "https://registry.yarnpkg.com/prisma2/-/prisma2-2.0.0-preview017.1.tgz#0eea3c5eb10cbcc482b296e8fdd87b3c4e7c33bc"
+  integrity sha512-Kl+W694NKcimPK4UEHFWnJhA8Wzjj3ciVGWAtodfV/z6FrEek8uQcSUP7kIFwroC+xwbcV+shCU7Sn54nog8rg==
 
 proxy-addr@~2.0.5:
   version "2.0.5"
@@ -442,10 +447,10 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
-ts-node@8.5.2:
-  version "8.5.2"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.5.2.tgz#434f6c893bafe501a30b32ac94ee36809ba2adce"
-  integrity sha512-W1DK/a6BGoV/D4x/SXXm6TSQx6q3blECUzd5TN+j56YEMX3yPVMpHsICLedUw3DvGF3aTQ8hfdR9AKMaHjIi+A==
+ts-node@8.5.3:
+  version "8.5.3"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.5.3.tgz#f0bcacbfda8a70188f3a5c561b2dab546cb0abbb"
+  integrity sha512-B4dYs62o9ioIilzh7Npby5grYvw3lLwttTSIzf7QObf1FWUCzt+ELtyZJd+xYgxJ/n3A5nQJ2oG6VaZgwMMcjA==
   dependencies:
     arg "^4.1.0"
     diff "^4.0.1"
