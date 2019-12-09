@@ -63,6 +63,7 @@ error Command failed with exit code 1.
 
 Help please!!!
 
+## Answer
 
 - Hi! This issue that you're facing is due to the breaking change introduced in `2.0.0-preview017` version. Before this version, PhotonJS was generated in the `node_modules` in the `@generated/photon` folder. In this version and forward, PhotonJS will be generated in `node_modules` in the `@prisma/photon` folder. So to fix your issue, you just need to update your **1st** line in `index.ts` and replace `@generated/photon` with `@prisma/photon`. This should make it work!
 

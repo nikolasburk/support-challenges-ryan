@@ -48,6 +48,8 @@ stack backtrace:
 
 How can I fix this problem?
 
+## Answer
+
 - Hey! As you have upgraded to the `preview016` release, there is a breaking change introduced in Lift's migration engine. Due to this, you need to manually delete the `migrations` folder from your system and drop the `_Migration` table from your database using the `DROP TABLE IF EXISTS _Migration` command.
 
 - After following the above steps, you can run `npx prisma2 dev` and your migrations will be applied successfully!
