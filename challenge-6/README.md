@@ -33,7 +33,7 @@ I would contact this person in Slack's DM as I had contacted this person on Slac
 
 ### Why did I choose the above place
 
-I chose Slack's DM as I feel this would be the correct place to inform the user that their language was not appropriate for the platform as it woudn't maintain a friendly conversation and also to not make the user fell picked out if I had add this message in public. So according to me a DM is the best way to convey this to the user.
+I chose Slack's DM as I feel this would be the correct place to inform the user that their language was not appropriate for the platform as it woudn't maintain a friendly conversation and also a DM would not make the user feel picked out if I had added this message in public. So according to me a DM is the best way to convey this to the user.
 
 ## Problem: Non-inclusive language
 
@@ -43,7 +43,7 @@ Imagine that someone reached out in the Prisma Slack `#general` channel with a t
 
 ### Message
 
-Hey everyone! It's great that you all have so much love for Prisma and you constantly keep in touch with us for any issues you're facing or any Feature Requests that you have, but just a friendly reminder that we promote more gender neutral words like `people`, `folks` or `everyone`, just like I wrote here! We want everyone to have a healthy conversation and using `guys` doesn't promote that. Thank you everyone for understanding and I hope we all have a great time helping each other here and grow our community in leaps and bounds!
+Hey everyone! It's great that you all have so much love for Prisma and you constantly keep in touch with us for any issues you're facing or any Feature Requests that you have, but just a friendly reminder that we promote gender neutral words like `people`, `folks` or `everyone`, just like I wrote here! We want everyone to have a healthy conversation and using `guys` doesn't promote that. Thank you everyone for understanding and I hope we all have a great time helping each other here and grow our community in leaps and bounds!
 
 ### Contact point
 

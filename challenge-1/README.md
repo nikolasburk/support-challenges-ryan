@@ -56,7 +56,7 @@ How can I fix this problem?
 
 - You can read more on the breaking changes introduced in the `2.0.0-preview016` version [here](https://github.com/prisma/prisma2/releases/tag/2.0.0-preview016)
 
-- If the above steps still don't work, please feel free to ask for any more help.
+- If the above steps still don't work, please feel free to reply in this thread.
 
 #### My thought process
 

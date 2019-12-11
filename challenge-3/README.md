@@ -28,7 +28,7 @@ Hello! I want to update my database schema to split the `name` column of the `Us
 
 ## Answer
 
-Hey, a great question indeed! Currently Prisma's Lift doesn't support this kind of migration, so as a workaround you would need to implement the following steps.
+Hey, a great question indeed! Currently Prisma's Lift engine doesn't support this kind of migration, so as a workaround you would need to implement the following steps.
 
 1. Create two fields `firstName` and `lastName` of the `String` type in your `User` model. The `firstName` and `lastName` fields should be optional as we won't be adding any data right now to those fields. Your `schema.prisma` should look something like this.
 
@@ -50,7 +50,7 @@ model User {
 }
 ```
 
-2. Create a migration using `npx prisma2 lift save --name 'split_name'` and then apply the migration using `npx prisma2 lift up`. Lastly, run `npx prisma2 generate` to generate PhotonJS again for the two new fields added.
+2. Create a migration using `npx prisma2 lift save --name 'split_name'` and then apply the migration using `npx prisma2 lift up`. Lastly, run `npx prisma2 generate` to generate the Photon types for the two new fields added.
 
 3. Create a file that runs this script that will add the values from `name` to `firstName` and `lastName` correctly. This needs to be done because if you remove the name field, lift will give you a warning that you will lose your data. Which is why we need to save the data to the `firstName` and `lastName` fields first. You can write a script that does something like this:
 
@@ -81,7 +81,7 @@ main().finally(async () => {
 
 5. After this successfully runs, you can inspect your database and find that the `firstName` and `lastName` fields have been updated.
 
-6. Now you can safely delete the `name` field from your `schema.prisma` and remove the `firstName` field from being optional as all the data has been successfully migrated. Your final `schema.prisma` should look something like this:
+6. Now you can safely delete the `name` field safely from your `schema.prisma` and remove the `firstName` field from being optional as all the data has been successfully migrated. Your final `schema.prisma` should look something like this:
 
 ```prisma
 generator photon {
@@ -100,6 +100,6 @@ model User {
 }
 ```
 
-7. As the last step, you can create a migration using `npx prisma2 lift save --name 'removed_name'` and then apply the migration using `npx prisma2 lift up`. As a final command, run `npx prisma2 generate` for PhotonJS to recognize your latest schema.
+7. As the last step, you can create a migration using `npx prisma2 lift save --name 'removed_name'` and then apply the migration using `npx prisma2 lift up`. As a final command, run `npx prisma2 generate` for Photon to generate types for your latest schema.
 
-I hope this solves your query. Do let me know if you face any other issues!
+I hope this solves your query. Do let me know if you face any other issues.

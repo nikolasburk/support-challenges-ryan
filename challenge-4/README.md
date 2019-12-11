@@ -101,7 +101,7 @@ const User = objectType({
 })
 ```
 
-This will make sure that you have the posts ordered by the **popularity** (i.e. `views`) and also a limit that would give you the ability to configure the number of posts that you want to fetch.
+This will make sure that the posts are ordered by the **popularity** (i.e. `views`) and also a limit that would give you the ability to configure the number of posts that you want to fetch.
 
 4. The final step is to create a query for the `users` so that we can call the query in the same way that you have mentioned above. So you would need to add a new field in the `Query` object that would fetch your users with the posts.
 
@@ -265,7 +265,7 @@ query {
   users {
     id
     name
-    posts(orderBy: { views: desc }, limit: 3) {
+    posts(orderBy: { views: desc }, first: 3) {
       id
       title
     }
